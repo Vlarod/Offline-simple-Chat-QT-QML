@@ -24,15 +24,5 @@ int main(int argc, char *argv[])
     }, Qt::QueuedConnection);
     engine.load(url);
 
-    /*BackEnd backend;
-       QQuickView view;
-       view.engine()->rootContext()->setContextProperty("backend", &backend);
-       view.setSource(QUrl::fromLocalFile("main.qml"));
-
-       QQuickView viewC;
-       viewC.engine()->rootContext()->setContextProperty("backend", &backend);
-       viewC.setSource(QUrl::fromLocalFile("client.qml"));
-       //view.show();
-*/
     return app.exec();
 }
